@@ -3,7 +3,12 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:my_wallet_app/data.dart';
 
-class PieChart extends StatelessWidget {
+class PieChart extends StatefulWidget {
+  @override
+  _PieChartState createState() => _PieChartState();
+}
+
+class _PieChartState extends State<PieChart> {
   @override
   Widget build(BuildContext context) {
     return Padding(

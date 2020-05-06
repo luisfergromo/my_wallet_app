@@ -5,7 +5,7 @@ import 'package:my_wallet_app/widgets/expenses.dart';
 
 import 'widgets/header.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(MaterialApp(
     home: HomePage(),
     debugShowCheckedModeBanner: false,
@@ -13,7 +13,12 @@ void main(List<String> args) {
   ));
 }
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
